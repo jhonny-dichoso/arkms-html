@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"/>
+    <title>ARKMS</title>
+  </head>
+  <body id="top">
+    <header>
+      <div id="navigation" class="container clearfix">
+        <div class="branding float-left">
+          <h1>ARKMS</h1>
+        </div>
+        
+        <ul class="mobile-menu show-on-sm">
+		  <li><a href="account.html"><i class="fas fa-user-circle"></i></a></li>
+          <li>
+            <div class="toggle-menu">
+            MENU
+            </div>
+        </li>
+        </ul>
+
+        <nav class="float-right">
+          <ul>
+            <li><a href="index.html" id="smooth-scroll" class="active"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="myresearches.html" id="smooth-scroll"><i class="fas fa-swatchbook"></i> My Researches</a></li>
+            <li><a href="" id="smooth-scroll"><i class="fas fa-chart-area"></i> Statistics</a></li>
+            <li><a href="collections.html" id="smooth-scroll"><i class="fas fa-folder-open"></i> Collections</a></li>
+            <li class="show-on-lg"><a href="account.html" id="smooth-scroll"><i class="fas fa-user-circle"></i> Jorge</a></li>
+            <li class="show-on-lg">|</li>
+            <li><a href="" id="smooth-scroll"> <i class="fas fa-envelope"></i> <span class="show-on-sm">Messages</span>  </a></li>
+            <li><a href="" id="smooth-scroll"> <i class="fas fa-bell"></i> </a> <span class="show-on-sm">Notifications</span> </li>
+            <li><a href="" id="smooth-scroll"> <i class="fas fa-ellipsis-h"></i> <span class="show-on-sm">Account</span> </a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="regular-page">
+      <section id="add-research" class="py-5  bg-lightbackground">
+		<div class="container">
+            <div class="wrapper">
+				<div class="row">
+					<div class="col-lg-12 col-md-12 col-sm-12"> 
+						<div class="text-center mb-2 center-all page-not-found">
+							<div>
+								<h2 class="title-lg">404 - PAGE NOT FOUND</h2>
+								<p class="mb-2">The page you are looking for might have been removed had its name change or is temporarily unavailable.</p>
+								<div class="row">
+									<div class="col-sm-4"></div>
+									<div class="col-sm-3 "><a href="index.html" class="btn--green">GO TO HOMEPAGE</a></div>
+									<div class="col-sm-4"></div>
+								</div>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+			</div>			
+		</div>
+	</section>
+    </main>
+
+    <footer class="py-5">
+		<div class="container">
+			<div class="footer-wrapper text-center">
+				<h2>ARKMS</h2>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
+				temporibus tenetur ratione repellendus.	</p>
+				<ul class="d-flex justify-center">
+					<li><a href="#">Home</a></li>
+					<li><a href="#">My Researches</a></li>
+					<li><a href="#">Statistics</a></li>
+					<li><a href="#">Collections</a></li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+	
+    <div class="copyright">
+		<div class="container center-between ">
+			<p class="no-padding">© 2019 ARKMS All right reserved</p>
+			<ul class="d-flex">
+				<li><i class="fab fa-facebook"></i></li>
+				<li><i class="fab fa-twitter"></i></li>
+				<li><i class="fab fa-youtube"></i></li>
+			</ul>
+		</div>
+    </div>
+
+	<div class="no-margin hide" id="messagebox">
+		<div class="col-lg-12 col-md-12 col-sm-12">
+			<div class="message">
+				<div class="confirm-update">
+					<i class="fas fa-check-circle mb-2"></i>
+					<p>Login Info has been successfully updated. </p>
+					<button class="btn btn--green form-control" id="BtnConfirmSave">DONE</button>
+				</div>
+			</div>
+		</div>	
+	</div>
+
+	<a href="#top" id="smooth-scroll" class="bck-top"><span class="fa fa-3x fa-caret-up"></span></a>  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>    
+	<script src="js/script.js"></script> 	
+	<script>
+	$(document).ready(function(){
+		var btnSaveInfo = document.getElementById("btnSaveInfo");
+		var msgBox = document.getElementById("messagebox");
+		var top = document.getElementById("top");
+		var BtnConfirmSave = document.getElementById("BtnConfirmSave");
+
+		btnSaveInfo.addEventListener("click",function(event){
+			event.preventDefault();
+			msgBox.classList.remove('hide');
+			msgBox.classList.add('show');
+			top.scrollIntoView({ block: 'start'});
+			top.classList.add('noscroll');
+		}); 
+		
+		BtnConfirmSave.addEventListener("click",function(event){
+			event.preventDefault();
+			msgBox.classList.remove('show');
+			msgBox.classList.add('hide');
+			top.classList.remove('noscroll');
+		}); 
+	}); 
+	</script>	
+  </body>
+</html>
