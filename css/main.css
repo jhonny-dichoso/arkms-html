@@ -2304,7 +2304,7 @@ footer li a {
   }
 }
 
-/* MON EDIT SELECT USER TYPE */
+/* MON EDIT SELECT USER TYPE Jan 31-2020*/
 .selectAccount {
   margin-top: 5rem;
 }
@@ -2335,4 +2335,19 @@ footer li a {
 .selectAccount-box li i.fa-plus {
   color: red;
   transform: rotate(45deg);
+}
+
+/* MON index feb 6 2020 */
+
+.browse-card .browse-card-content h4,
+.browse-card .browse-card-content p {
+  max-width: 25rem;
+  max-height: 7.6rem;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: wrap;
+}
+
+.browse-card .browse-card-content p {
+  max-height: 16.3rem;
 }
