@@ -2345,7 +2345,7 @@ footer li a {
 }
 
 .browse-research-header ul::-webkit-scrollbar {
-  height: 0.5rem;
+  height: 0.9rem;
 }
 
 .browse-research-header ul::-webkit-scrollbar-track {
@@ -2365,7 +2365,7 @@ footer li a {
 }
 .browse-card .browse-card-content h4,
 .browse-card .browse-card-content p {
-  max-width: 25rem;
+  max-width: 100%;
   max-height: 7.6rem;
   text-overflow: ellipsis;
   overflow: hidden;
