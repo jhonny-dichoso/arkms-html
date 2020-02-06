@@ -2339,6 +2339,30 @@ footer li a {
 
 /* MON index feb 6 2020 */
 
+.browse-research-header ul {
+  justify-content: flex-start;
+  overflow-x: scroll;
+}
+
+.browse-research-header ul::-webkit-scrollbar {
+  height: 0.5rem;
+}
+
+.browse-research-header ul::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #b4b4b4;
+}
+
+/* Handle */
+.browse-research-header ul::-webkit-scrollbar-thumb {
+  background: #b4b4b4;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+.browse-research-header ul::-webkit-scrollbar-thumb:hover {
+  background: #00cc67;
+  cursor: pointer;
+}
 .browse-card .browse-card-content h4,
 .browse-card .browse-card-content p {
   max-width: 25rem;
