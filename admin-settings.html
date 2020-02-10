@@ -66,6 +66,83 @@
 		</div>
 		<hr class="mb-3">
 		<div class="row">
+			<div class="col-sm-12  col-md-12"><h2 class="">User Settings</h2></div>
+		</div>
+		<div class="row">
+			<div class="col-sm-4  col-md-4"></div>
+			<div class="col-sm-4  col-md-4">
+				<div class="wrap-add center-all">
+					<a href="#add-user" class="btn--green">ADD USER <i class="fas fa-plus-circle"></i></a>
+				</div>
+			</div>
+			<div class="col-sm-4  col-md-4"></div>
+		</div>
+		<div class="row">
+			<div class="col-lg-12 col-md-12 col-sm-12">
+				<div id="add-user" class="overlay">
+					<div class="popup">
+						<h3 class="mb--20">Add User </h3>
+						<a class="close" href="#">&times;</a>
+						<div class="content">
+							<form action="">
+								<input type="text" class="" placeholder="" />
+								<p class="text-center"> <label for="" class="error-caption">User Already Exist!</label> </p>
+								<button type="submit" class="btn--green save" id="btnSaveResearch"> SAVE USER INFO <i class="far fa-save"></i></button>
+							</form>
+						</div>
+					</div>
+				</div>
+				<div id="edit-user" class="overlay">
+					<div class="popup">
+						<h3 class="mb--20">Edit User</h3>
+						<a class="close" href="#">&times;</a>
+						<div class="content">
+							<form action="">
+								<input type="text" class="" placeholder="" />
+								<p class="text-center"> <label for="" class="error-caption">User Already Exist!</label> </p>
+								<button type="submit" class="btn--green save" id="btnSaveResearch"> SAVE USER INFO <i class="far fa-save"></i></button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>	
+		</div>
+		<div class="row mb-5">
+			<div class="col-lg-12 col-md-12 col-sm-12 table-col">
+				<table id="research-table" class="" cellspacing="0" width="100%" style="width: 100%;">
+					<thead>
+						<tr>
+							<th class="" tabindex="0" rowspan="1" colspan="1" style="">No.</th>
+							<th class="" tabindex="0" rowspan="1" colspan="1" style="" >User</th>
+							<th class=" text-center action" rowspan="1" colspan="1" style="" >Action</th>
+						</tr>
+					</thead>
+					<tbody id="idTableBodyStudent">
+						<tr>
+							<td class="learner_no" tabindex="0" rowspan="1" colspan="1">1</td>
+							<td class="" tabindex="0" rowspan="1" colspan="1">User 1</td>
+							<td class="text-center options action" rowspan="1" colspan="1">
+								<a id="idAview" href="#edit-user" class="edit"><i class="fas fa-pen"></i></a>
+								<a id="idAdelete" href="#" class="btnDelete"><i class="fas fa-trash-alt"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td class="learner_no" tabindex="0" rowspan="1" colspan="1">2</td>
+							<td class="" tabindex="0" rowspan="1" colspan="1">User 2</td>
+							<td class="text-center options action" rowspan="1" colspan="1">
+								<a id="idAview" href="#edit-user" class="edit"><i class="fas fa-pen"></i></a>
+								<a id="idAdelete" href="#" class="btnDelete"><i class="fas fa-trash-alt"></i></a>
+							</td>
+						</tr>						
+					</tbody>
+				</table>
+			</div>	
+		</div>
+		<hr class="mb-5">
+		<div class="row">
+			<div class="col-sm-12  col-md-12"><h2 class="">Category Settings</h2></div>
+		</div>
+		<div class="row">
 			<div class="col-sm-4  col-md-4"></div>
 			<div class="col-sm-4  col-md-4">
 				<div class="wrap-add center-all">
@@ -78,13 +155,26 @@
 			<div class="col-lg-12 col-md-12 col-sm-12">
 				<div id="add-category" class="overlay">
 					<div class="popup">
-						<h3 class="mb--20">Add Category Feb 7 2020</h3>
+						<h3 class="mb--20">Add Category</h3>
 						<a class="close" href="#">&times;</a>
 						<div class="content">
 							<form action="">
 								<input type="text" class="" placeholder="" />
 								<p class="text-center"> <label for="" class="error-caption">Category Already Exist!</label> </p>
-								<button type="submit" class="btn--green" id="btnSaveResearch"> SAVE CATEGORY <i class="far fa-save"></i></button>
+								<button type="submit" class="btn--green save" id="btnSaveResearch"> SAVE CATEGORY <i class="far fa-save"></i></button>
+							</form>
+						</div>
+					</div>
+				</div>
+				<div id="edit-category" class="overlay">
+					<div class="popup">
+						<h3 class="mb--20">Edit Category</h3>
+						<a class="close" href="#">&times;</a>
+						<div class="content">
+							<form action="">
+								<input type="text" class="" placeholder="" />
+								<p class="text-center"> <label for="" class="error-caption">Category Already Exist!</label> </p>
+								<button type="submit" class="btn--green save" id="btnSaveResearch"> SAVE CATEGORY <i class="far fa-save"></i></button>
 							</form>
 						</div>
 					</div>
@@ -106,16 +196,16 @@
 							<td class="learner_no" tabindex="0" rowspan="1" colspan="1">1</td>
 							<td class="" tabindex="0" rowspan="1" colspan="1">Farming</td>
 							<td class="text-center options action" rowspan="1" colspan="1">
-								<a id="idAview" href="research.html" class="view"><i class="fas fa-pen"></i></a>
-								<a id="idAdelete" href="" class="delete"><i class="fas fa-trash-alt"></i></a>
+								<a id="idAview" href="#edit-category" class="edit"><i class="fas fa-pen"></i></a>
+								<a id="idAdelete" href="#" class="btnDelete"><i class="fas fa-trash-alt"></i></a>
 							</td>
 						</tr>
 						<tr>
 							<td class="learner_no" tabindex="0" rowspan="1" colspan="1">2</td>
 							<td class="" tabindex="0" rowspan="1" colspan="1">Livestock</td>
 							<td class="text-center options action" rowspan="1" colspan="1">
-								<a id="idAview" href="research.html" class="view"><i class="fas fa-pen"></i></a>
-								<a id="idAdelete" href="" class="delete"><i class="fas fa-trash-alt"></i></a>
+								<a id="idAview" href="#edit-category" class="edit"><i class="fas fa-pen"></i></a>
+								<a id="idAdelete" href="#" class="btnDelete"><i class="fas fa-trash-alt"></i></a>
 							</td>
 						</tr>						
 					</tbody>
@@ -156,22 +246,21 @@
 
 <div class="no-margin hide" id="messagebox">
 	<div class="col-lg-12 col-md-12 col-sm-12">
-	  <div class="message">
-		<div class="confirm-delete">
-		  <i class="fas fa-question-circle mb-2"></i>
-		  <p>Are you sure you want to delete this Collection? </p>
-		  <div class="row">
-			<div class="col-lg-6 col-md-6 col-sm-6">
-			  <button class="btn btn--green form-control" id="idBtnYes">YES</button>
+		<div class="message">
+			<div class="confirm-delete">
+				<i class="fas fa-question-circle mb-2"></i>
+				<p>Are you sure you want to delete this Record? </p>
+				<div class="row">
+				<div class="col-lg-6 col-md-6 col-sm-6">
+					<button class="btn btn--green form-control" id="idBtnYes">YES</button>
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-6">
+					<button class="btn btn--green form-control" id="idBtnNo">NO</button>
+				</div>
+				</div>
 			</div>
-			<div class="col-lg-6 col-md-6 col-sm-6">
-			  <button class="btn btn--green form-control" id="idBtnNo">NO</button>
-			</div>
-		  </div>
 		</div>
-	  </div>
 	</div>	
-  </div>
 </div>
 
 <a href="#top" id="smooth-scroll" class="bck-top"><span class="fa fa-3x fa-caret-up"></span></a>  
@@ -179,12 +268,41 @@
 <script src="js/script.js"></script> 	
 <script>
     $(document).ready(function(){
-	  var btnSaveResearch = document.getElementById("btnSaveResearch");
-	//   var overlay = document.querySelector(".overlay");
-	  
-	  btnSaveResearch.addEventListener("click",function(event){
-			window.location.href = '#';
+	  var btnSaveResearch = document.querySelectorAll("#btnSaveResearch");
+	  var btnDelete = document.querySelectorAll(".btnDelete");
+      var msgBox = document.getElementById("messagebox");
+      var top = document.getElementById("top");
+      var idBtnYes = document.getElementById("idBtnYes");
+
+		btnSaveResearch.forEach(f => {
+			f.addEventListener("click", () => {
+				window.location.href = '#';
+			}); 
 		}); 
+
+		btnDelete.forEach(f => {
+			f.addEventListener("click", () => {
+				event.preventDefault();
+				msgBox.classList.remove('hide');
+				msgBox.classList.add('show');
+				top.scrollIntoView({ block: 'start'});
+				top.classList.add('noscroll');
+			});
+		});
+        
+      idBtnYes.addEventListener("click",function(event){
+          event.preventDefault();
+          msgBox.classList.remove('show');
+          msgBox.classList.add('hide');
+          top.classList.remove('noscroll');
+      },false); 
+
+      idBtnNo.addEventListener("click",function(event){
+          event.preventDefault();
+          msgBox.classList.remove('show');
+          msgBox.classList.add('hide');
+          top.classList.remove('noscroll');
+      },false); 
 
     
   	}); 
