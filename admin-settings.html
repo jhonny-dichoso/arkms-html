@@ -84,7 +84,7 @@
 							<form action="">
 								<input type="text" class="" placeholder="" />
 								<p class="text-center"> <label for="" class="error-caption">Category Already Exist!</label> </p>
-								<button type="submit" class="btn--green" id="btnSaveResearch"> SAVE RESEARCH <i class="far fa-save"></i></button>
+								<button type="submit" class="btn--green" id="btnSaveResearch"> SAVE CATEGORY <i class="far fa-save"></i></button>
 							</form>
 						</div>
 					</div>
@@ -179,46 +179,13 @@
 <script src="js/script.js"></script> 	
 <script>
     $(document).ready(function(){
-	  var btnDeleteResearch = document.querySelectorAll(".btnDeleteResearch");
-	  var btnEditCollection = document.querySelectorAll(".btnEditCollection");
-	  var filename = document.querySelectorAll(".filename"), i;
-      var msgBox = document.getElementById("messagebox");
-      var top = document.getElementById("top");
-      var idBtnYes = document.getElementById("idBtnYes");
-  
-      btnEditCollection.forEach(f => {
-        f.addEventListener("click", () => {
-			event.preventDefault();
-			console.log(btnEditCollection[f]);
-			// for (i = 0; i < filename.length; ++i) {
-			// filename[i].style.color = "green";
-			// }
-        });
-	  });
+	  var btnSaveResearch = document.getElementById("btnSaveResearch");
+	//   var overlay = document.querySelector(".overlay");
 	  
-	  btnDeleteResearch.forEach(f => {
-        f.addEventListener("click", () => {
-            event.preventDefault();
-            msgBox.classList.remove('hide');
-            msgBox.classList.add('show');
-            top.scrollIntoView({ block: 'start'});
-            top.classList.add('noscroll');
-        });
-      });
-        
-      idBtnYes.addEventListener("click",function(event){
-          event.preventDefault();
-          msgBox.classList.remove('show');
-          msgBox.classList.add('hide');
-          top.classList.remove('noscroll');
-      },false); 
+	  btnSaveResearch.addEventListener("click",function(event){
+			window.location.href = '#';
+		}); 
 
-      idBtnNo.addEventListener("click",function(event){
-          event.preventDefault();
-          msgBox.classList.remove('show');
-          msgBox.classList.add('hide');
-          top.classList.remove('noscroll');
-      },false); 
     
   	}); 
 </script>	
