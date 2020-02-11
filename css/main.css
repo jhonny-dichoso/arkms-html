@@ -1486,7 +1486,7 @@ input {
 .browse-card-content {
   padding: 1.5rem;
 }
-/* MON EDIT STAT PAGE 2-11-2020 */
+/* MON EDIT STAT PAGE feb-11-2020 */
 .browse-card-content .cat-list {
   max-width: 25rem;
   margin: 0 auto;
@@ -1495,12 +1495,14 @@ input {
   text-align: left;
   font-weight: bold;
   margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
 }
 
 .browse-card-content .cat-list .cat-list-item span {
-  color: #00cc67;
+  /* color: #00cc67; */
 }
-/* MON EDIT STAT PAGE 2-11-2020 END*/
+/* MON EDIT STAT PAGE feb-11-2020 END*/
 
 .most-download-card .flex-content,
 .browse-card .flex-content {
