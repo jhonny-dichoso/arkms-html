@@ -726,7 +726,9 @@ form textarea {
   font-size: 1.5rem;
 }
 
-#messagebox {
+/* MON Feb-13-2020 */
+#messagebox,
+#messageboxAddAdmin {
   background: rgba(0, 0, 0, 0.4);
   position: fixed;
   left: 0;
@@ -751,7 +753,10 @@ form textarea {
   right: 0;
 }
 
-/* MON Feb-13-2020 */
+.msg-add-user {
+  max-width: 575px;
+}
+
 .message h2 {
   margin-top: 2rem;
 }
@@ -778,6 +783,7 @@ form textarea {
   font-weight: bold;
   text-decoration: none;
   color: #333;
+  background: transparent;
 }
 
 .message .popup-addUser-close:hover {
