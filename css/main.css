@@ -2352,3 +2352,36 @@ footer li a {
     width: 70%;
   }
 }
+
+/* MON EDIT SELECT USER TYPE */
+.selectAccount {
+  margin-top: 5rem;
+}
+.selectAccount-box {
+  padding: 2rem;
+  background: #fff;
+  box-shadow: 3px 5px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin-bottom: 2rem;
+}
+
+.selectAccount-box li {
+  border-bottom: 1px solid #f3f3f3;
+  padding: 1rem 0;
+}
+
+.selectAccount-box li:last-child {
+  border-bottom: none;
+  margin-bottom: 3rem;
+}
+
+.selectAccount-box li i {
+  color: #129206;
+  padding-right: 0.5rem;
+  display: inline-block;
+}
+
+.selectAccount-box li i.fa-plus {
+  color: red;
+  transform: rotate(45deg);
+}
