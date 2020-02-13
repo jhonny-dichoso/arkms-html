@@ -85,7 +85,7 @@
             <div class="col-sm-4  col-md-4"></div>
             <div class="col-sm-4  col-md-4">
               <div class="wrap-add center-all">
-                <a href="#add-user" class="btn--green"
+                <a href="#" class="btn--green" id="btnAddUser"
                   >ADD USER <i class="fas fa-plus-circle"></i
                 ></a>
               </div>
@@ -153,18 +153,13 @@
               >
                 <thead>
                   <tr>
-                    <th class="" tabindex="0" rowspan="1" colspan="1" style="">
+                    <th class="" tabindex="0" rowspan="1" colspan="1">
                       No.
                     </th>
-                    <th class="" tabindex="0" rowspan="1" colspan="1" style="">
+                    <th class="" tabindex="0" rowspan="1" colspan="1">
                       User
                     </th>
-                    <th
-                      class=" text-center action"
-                      rowspan="1"
-                      colspan="1"
-                      style=""
-                    >
+                    <th class=" text-center action" rowspan="1" colspan="1">
                       Action
                     </th>
                   </tr>
@@ -292,18 +287,13 @@
               >
                 <thead>
                   <tr>
-                    <th class="" tabindex="0" rowspan="1" colspan="1" style="">
+                    <th class="" tabindex="0" rowspan="1" colspan="1">
                       No.
                     </th>
-                    <th class="" tabindex="0" rowspan="1" colspan="1" style="">
+                    <th class="" tabindex="0" rowspan="1" colspan="1">
                       Research Category
                     </th>
-                    <th
-                      class=" text-center action"
-                      rowspan="1"
-                      colspan="1"
-                      style=""
-                    >
+                    <th class=" text-center action" rowspan="1" colspan="1">
                       Action
                     </th>
                   </tr>
@@ -405,7 +395,7 @@
 	</div>	
 </div> -->
 
-    <div class="no-margin popup-addUser" id="messagebox">
+    <div class="no-margin hide popup-addUser" id="messagebox">
       <div class="col-lg-12 col-md-12 col-sm-12">
         <div class="message">
           <h2>Add User</h2>
@@ -423,9 +413,9 @@
               <input type="password" placeholder="Enter Password" />
             </div>
             <button class="btn--green">Submit</button>
-            <p class="form-message">Something when wrong!</p>
+            <p class="form-message error-caption">Something when wrong!</p>
           </form>
-          <a href="#" class="popup-addUser-close">x</a>
+          <a href="#" class="popup-addUser-close" id="closeAddUser">&times;</a>
         </div>
       </div>
     </div>
@@ -444,6 +434,18 @@
         var idBtnYes = document.getElementById("idBtnYes");
 
         // EDIT MON feb-13-2020
+
+        const btnAddUserClose = document.querySelector("#closeAddUser");
+        const btnAddUser = document.querySelector("#btnAddUser");
+        btnAddUserClose.addEventListener("click", () => {
+          msgBox.classList.add("hide");
+        });
+
+        btnAddUser.addEventListener("click", () => {
+          msgBox.classList.remove("hide");
+        });
+
+        // EDIT END
 
         btnSaveResearch.forEach(f => {
           f.addEventListener("click", () => {
