@@ -1,249 +1,391 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-	<link rel="stylesheet" href="./css/main.css" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"/>
-	<title>ARKMS</title>
-</head>
-<body id="top">
-	<header>
-		<div id="navigation" class="container clearfix">
-			<div class="branding float-left">
-				<h1>ARKMS</h1>
-			</div>
-			
-			<ul class="mobile-menu show-on-sm">
-				<li>
-					<a href="account.html">
-						<div class="wrapper-topProfile">
-							<div class="topProfile">
-							  <img src="images/profile-image.jpg">
-							</div>
-						</div>
-					</a>
-				</li>
-				<li>
-					<div class="toggle-menu">MENU</div>
-				</li>
-			</ul>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+    />
+    <title>ARKMS</title>
+  </head>
+  <body id="top">
+    <header>
+      <div id="navigation" class="container clearfix">
+        <div class="branding float-left">
+          <h1>ARKMS</h1>
+        </div>
 
-			<nav class="float-right">
-				<ul>
-					<li><a href="login.html" id="smooth-scroll" class="active"><i class="fas fa-home"></i> Home</a></li>
-					<li><a href="collections.html" id="smooth-scroll"><i class="fas fa-cog"></i> Settings</a></li>
-					<li class="show-on-lg">
-						<a href="account.html" id="smooth-scroll"> 
-							<div class="wrapper-topProfile">
-								<div class="topProfile">
-								<img src="images/profile-image.jpg">
-								</div>
-							</div>
-						</a>
-					</li>
-					<li class="show-on-lg">|</li>
-					<li><a href="login.html" id="smooth-scroll" class="active"> Logout</a></li>
-				</ul>
-			</nav>
-		</div>
-	</header>
+        <ul class="mobile-menu show-on-sm">
+          <li>
+            <a href="account.html">
+              <div class="wrapper-topProfile">
+                <div class="topProfile">
+                  <img src="images/profile-image.jpg" />
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <div class="toggle-menu">MENU</div>
+          </li>
+        </ul>
 
-<main id="regular-page" class="collections">
-	<section class="browse-research py-5">
-	<div class="container">
-		<div class="browse-research-header py-3">
-			<div class="row">
-				<div class="col-md-8">
-					<span class="title-sm">Research</span>
-					<h2 class="title-lg">Settings</h2>
-				</div>
-				<div class="col-md-4">
-					
-				</div>
-			</div>
-		</div>
-		<hr class="mb-3">
-		<div class="row">
-			<div class="col-sm-12  col-md-12"><h2 class="">User Settings</h2></div>
-		</div>
-		<div class="row">
-			<div class="col-sm-4  col-md-4"></div>
-			<div class="col-sm-4  col-md-4">
-				<div class="wrap-add center-all">
-					<a href="#add-user" class="btn--green">ADD USER <i class="fas fa-plus-circle"></i></a>
-				</div>
-			</div>
-			<div class="col-sm-4  col-md-4"></div>
-		</div>
-		<div class="row">
-			<div class="col-lg-12 col-md-12 col-sm-12">
-				<div id="add-user" class="overlay">
-					<div class="popup">
-						<h3 class="mb--20">Add User </h3>
-						<a class="close" href="#">&times;</a>
-						<div class="content">
-							<form action="">
-								<input type="text" class="" placeholder="" />
-								<p class="text-center"> <label for="" class="error-caption">User Already Exist!</label> </p>
-								<button type="submit" class="btn--green save" id="btnSaveResearch"> SAVE USER INFO <i class="far fa-save"></i></button>
-							</form>
-						</div>
-					</div>
-				</div>
-				<div id="edit-user" class="overlay">
-					<div class="popup">
-						<h3 class="mb--20">Edit User</h3>
-						<a class="close" href="#">&times;</a>
-						<div class="content">
-							<form action="">
-								<input type="text" class="" placeholder="" />
-								<p class="text-center"> <label for="" class="error-caption">User Already Exist!</label> </p>
-								<button type="submit" class="btn--green save" id="btnSaveResearch"> SAVE USER INFO <i class="far fa-save"></i></button>
-							</form>
-						</div>
-					</div>
-				</div>
-			</div>	
-		</div>
-		<div class="row mb-5">
-			<div class="col-lg-12 col-md-12 col-sm-12 table-col">
-				<table id="research-table" class="" cellspacing="0" width="100%" style="width: 100%;">
-					<thead>
-						<tr>
-							<th class="" tabindex="0" rowspan="1" colspan="1" style="">No.</th>
-							<th class="" tabindex="0" rowspan="1" colspan="1" style="" >User</th>
-							<th class=" text-center action" rowspan="1" colspan="1" style="" >Action</th>
-						</tr>
-					</thead>
-					<tbody id="idTableBodyStudent">
-						<tr>
-							<td class="learner_no" tabindex="0" rowspan="1" colspan="1">1</td>
-							<td class="" tabindex="0" rowspan="1" colspan="1">User 1</td>
-							<td class="text-center options action" rowspan="1" colspan="1">
-								<a id="idAview" href="#edit-user" class="edit"><i class="fas fa-pen"></i></a>
-								<a id="idAdelete" href="#" class="btnDelete"><i class="fas fa-trash-alt"></i></a>
-							</td>
-						</tr>
-						<tr>
-							<td class="learner_no" tabindex="0" rowspan="1" colspan="1">2</td>
-							<td class="" tabindex="0" rowspan="1" colspan="1">User 2</td>
-							<td class="text-center options action" rowspan="1" colspan="1">
-								<a id="idAview" href="#edit-user" class="edit"><i class="fas fa-pen"></i></a>
-								<a id="idAdelete" href="#" class="btnDelete"><i class="fas fa-trash-alt"></i></a>
-							</td>
-						</tr>						
-					</tbody>
-				</table>
-			</div>	
-		</div>
-		<hr class="mb-5">
-		<div class="row">
-			<div class="col-sm-12  col-md-12"><h2 class="">Category Settings</h2></div>
-		</div>
-		<div class="row">
-			<div class="col-sm-4  col-md-4"></div>
-			<div class="col-sm-4  col-md-4">
-				<div class="wrap-add center-all">
-					<a href="#add-category" class="btn--green">ADD RESEARCH CATEGORY <i class="fas fa-plus-circle"></i></a>
-				</div>
-			</div>
-			<div class="col-sm-4  col-md-4"></div>
-		</div>
-		<div class="row">
-			<div class="col-lg-12 col-md-12 col-sm-12">
-				<div id="add-category" class="overlay">
-					<div class="popup">
-						<h3 class="mb--20">Add Category</h3>
-						<a class="close" href="#">&times;</a>
-						<div class="content">
-							<form action="">
-								<input type="text" class="" placeholder="" />
-								<p class="text-center"> <label for="" class="error-caption">Category Already Exist!</label> </p>
-								<button type="submit" class="btn--green save" id="btnSaveResearch"> SAVE CATEGORY <i class="far fa-save"></i></button>
-							</form>
-						</div>
-					</div>
-				</div>
-				<div id="edit-category" class="overlay">
-					<div class="popup">
-						<h3 class="mb--20">Edit Category</h3>
-						<a class="close" href="#">&times;</a>
-						<div class="content">
-							<form action="">
-								<input type="text" class="" placeholder="" />
-								<p class="text-center"> <label for="" class="error-caption">Category Already Exist!</label> </p>
-								<button type="submit" class="btn--green save" id="btnSaveResearch"> SAVE CATEGORY <i class="far fa-save"></i></button>
-							</form>
-						</div>
-					</div>
-				</div>
-			</div>	
-		</div>
-		<div class="row">
-			<div class="col-lg-12 col-md-12 col-sm-12 table-col">
-				<table id="research-table" class="" cellspacing="0" width="100%" style="width: 100%;">
-					<thead>
-						<tr>
-							<th class="" tabindex="0" rowspan="1" colspan="1" style="">No.</th>
-							<th class="" tabindex="0" rowspan="1" colspan="1" style="" >Research Category</th>
-							<th class=" text-center action" rowspan="1" colspan="1" style="" >Action</th>
-						</tr>
-					</thead>
-					<tbody id="idTableBodyStudent">
-						<tr>
-							<td class="learner_no" tabindex="0" rowspan="1" colspan="1">1</td>
-							<td class="" tabindex="0" rowspan="1" colspan="1">Farming</td>
-							<td class="text-center options action" rowspan="1" colspan="1">
-								<a id="idAview" href="#edit-category" class="edit"><i class="fas fa-pen"></i></a>
-								<a id="idAdelete" href="#" class="btnDelete"><i class="fas fa-trash-alt"></i></a>
-							</td>
-						</tr>
-						<tr>
-							<td class="learner_no" tabindex="0" rowspan="1" colspan="1">2</td>
-							<td class="" tabindex="0" rowspan="1" colspan="1">Livestock</td>
-							<td class="text-center options action" rowspan="1" colspan="1">
-								<a id="idAview" href="#edit-category" class="edit"><i class="fas fa-pen"></i></a>
-								<a id="idAdelete" href="#" class="btnDelete"><i class="fas fa-trash-alt"></i></a>
-							</td>
-						</tr>						
-					</tbody>
-				</table>
-			</div>	
-		</div>
+        <nav class="float-right">
+          <ul>
+            <li>
+              <a href="login.html" id="smooth-scroll" class="active"
+                ><i class="fas fa-home"></i> Home</a
+              >
+            </li>
+            <li>
+              <a href="collections.html" id="smooth-scroll"
+                ><i class="fas fa-cog"></i> Settings</a
+              >
+            </li>
+            <li class="show-on-lg">
+              <a href="account.html" id="smooth-scroll">
+                <div class="wrapper-topProfile">
+                  <div class="topProfile">
+                    <img src="images/profile-image.jpg" />
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="show-on-lg">|</li>
+            <li>
+              <a href="login.html" id="smooth-scroll" class="active"> Logout</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
-	</div>
-	</section>
-</main>
+    <main id="regular-page" class="collections">
+      <section class="browse-research py-5">
+        <div class="container">
+          <div class="browse-research-header py-3">
+            <div class="row">
+              <div class="col-md-8">
+                <span class="title-sm">Research</span>
+                <h2 class="title-lg">Settings</h2>
+              </div>
+              <div class="col-md-4"></div>
+            </div>
+          </div>
+          <hr class="mb-3" />
+          <div class="row">
+            <div class="col-sm-12  col-md-12">
+              <h2 class="">User Settings</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-4  col-md-4"></div>
+            <div class="col-sm-4  col-md-4">
+              <div class="wrap-add center-all">
+                <a href="#add-user" class="btn--green"
+                  >ADD USER <i class="fas fa-plus-circle"></i
+                ></a>
+              </div>
+            </div>
+            <div class="col-sm-4  col-md-4"></div>
+          </div>
+          <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+              <div id="add-user" class="overlay">
+                <div class="popup">
+                  <h3 class="mb--20">Add User</h3>
+                  <a class="close" href="#">&times;</a>
+                  <div class="content">
+                    <form action="">
+                      <input type="text" class="" placeholder="" />
+                      <p class="text-center">
+                        <label for="" class="error-caption"
+                          >User Already Exist!</label
+                        >
+                      </p>
+                      <button
+                        type="submit"
+                        class="btn--green save"
+                        id="btnSaveResearch"
+                      >
+                        SAVE USER INFO <i class="far fa-save"></i>
+                      </button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <div id="edit-user" class="overlay">
+                <div class="popup">
+                  <h3 class="mb--20">Edit User</h3>
+                  <a class="close" href="#">&times;</a>
+                  <div class="content">
+                    <form action="">
+                      <input type="text" class="" placeholder="" />
+                      <p class="text-center">
+                        <label for="" class="error-caption"
+                          >User Already Exist!</label
+                        >
+                      </p>
+                      <button
+                        type="submit"
+                        class="btn--green save"
+                        id="btnSaveResearch"
+                      >
+                        SAVE USER INFO <i class="far fa-save"></i>
+                      </button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row mb-5">
+            <div class="col-lg-12 col-md-12 col-sm-12 table-col">
+              <table
+                id="research-table"
+                class=""
+                cellspacing="0"
+                width="100%"
+                style="width: 100%;"
+              >
+                <thead>
+                  <tr>
+                    <th class="" tabindex="0" rowspan="1" colspan="1" style="">
+                      No.
+                    </th>
+                    <th class="" tabindex="0" rowspan="1" colspan="1" style="">
+                      User
+                    </th>
+                    <th
+                      class=" text-center action"
+                      rowspan="1"
+                      colspan="1"
+                      style=""
+                    >
+                      Action
+                    </th>
+                  </tr>
+                </thead>
+                <tbody id="idTableBodyStudent">
+                  <tr>
+                    <td class="learner_no" tabindex="0" rowspan="1" colspan="1">
+                      1
+                    </td>
+                    <td class="" tabindex="0" rowspan="1" colspan="1">
+                      User 1
+                    </td>
+                    <td
+                      class="text-center options action"
+                      rowspan="1"
+                      colspan="1"
+                    >
+                      <a id="idAview" href="#edit-user" class="edit"
+                        ><i class="fas fa-pen"></i
+                      ></a>
+                      <a id="idAdelete" href="#" class="btnDelete"
+                        ><i class="fas fa-trash-alt"></i
+                      ></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="learner_no" tabindex="0" rowspan="1" colspan="1">
+                      2
+                    </td>
+                    <td class="" tabindex="0" rowspan="1" colspan="1">
+                      User 2
+                    </td>
+                    <td
+                      class="text-center options action"
+                      rowspan="1"
+                      colspan="1"
+                    >
+                      <a id="idAview" href="#edit-user" class="edit"
+                        ><i class="fas fa-pen"></i
+                      ></a>
+                      <a id="idAdelete" href="#" class="btnDelete"
+                        ><i class="fas fa-trash-alt"></i
+                      ></a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <hr class="mb-5" />
+          <div class="row">
+            <div class="col-sm-12  col-md-12">
+              <h2 class="">Category Settings</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-4  col-md-4"></div>
+            <div class="col-sm-4  col-md-4">
+              <div class="wrap-add center-all">
+                <a href="#add-category" class="btn--green"
+                  >ADD RESEARCH CATEGORY <i class="fas fa-plus-circle"></i
+                ></a>
+              </div>
+            </div>
+            <div class="col-sm-4  col-md-4"></div>
+          </div>
+          <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+              <div id="add-category" class="overlay">
+                <div class="popup">
+                  <h3 class="mb--20">Add Category</h3>
+                  <a class="close" href="#">&times;</a>
+                  <div class="content">
+                    <form action="">
+                      <input type="text" class="" placeholder="" />
+                      <p class="text-center">
+                        <label for="" class="error-caption"
+                          >Category Already Exist!</label
+                        >
+                      </p>
+                      <button
+                        type="submit"
+                        class="btn--green save"
+                        id="btnSaveResearch"
+                      >
+                        SAVE CATEGORY <i class="far fa-save"></i>
+                      </button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <div id="edit-category" class="overlay">
+                <div class="popup">
+                  <h3 class="mb--20">Edit Category</h3>
+                  <a class="close" href="#">&times;</a>
+                  <div class="content">
+                    <form action="">
+                      <input type="text" class="" placeholder="" />
+                      <p class="text-center">
+                        <label for="" class="error-caption"
+                          >Category Already Exist!</label
+                        >
+                      </p>
+                      <button
+                        type="submit"
+                        class="btn--green save"
+                        id="btnSaveResearch"
+                      >
+                        SAVE CATEGORY <i class="far fa-save"></i>
+                      </button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 table-col">
+              <table
+                id="research-table"
+                class=""
+                cellspacing="0"
+                width="100%"
+                style="width: 100%;"
+              >
+                <thead>
+                  <tr>
+                    <th class="" tabindex="0" rowspan="1" colspan="1" style="">
+                      No.
+                    </th>
+                    <th class="" tabindex="0" rowspan="1" colspan="1" style="">
+                      Research Category
+                    </th>
+                    <th
+                      class=" text-center action"
+                      rowspan="1"
+                      colspan="1"
+                      style=""
+                    >
+                      Action
+                    </th>
+                  </tr>
+                </thead>
+                <tbody id="idTableBodyStudent">
+                  <tr>
+                    <td class="learner_no" tabindex="0" rowspan="1" colspan="1">
+                      1
+                    </td>
+                    <td class="" tabindex="0" rowspan="1" colspan="1">
+                      Farming
+                    </td>
+                    <td
+                      class="text-center options action"
+                      rowspan="1"
+                      colspan="1"
+                    >
+                      <a id="idAview" href="#edit-category" class="edit"
+                        ><i class="fas fa-pen"></i
+                      ></a>
+                      <a id="idAdelete" href="#" class="btnDelete"
+                        ><i class="fas fa-trash-alt"></i
+                      ></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="learner_no" tabindex="0" rowspan="1" colspan="1">
+                      2
+                    </td>
+                    <td class="" tabindex="0" rowspan="1" colspan="1">
+                      Livestock
+                    </td>
+                    <td
+                      class="text-center options action"
+                      rowspan="1"
+                      colspan="1"
+                    >
+                      <a id="idAview" href="#edit-category" class="edit"
+                        ><i class="fas fa-pen"></i
+                      ></a>
+                      <a id="idAdelete" href="#" class="btnDelete"
+                        ><i class="fas fa-trash-alt"></i
+                      ></a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
 
-<footer class="py-5">
-	<div class="container">
-		<div class="footer-wrapper text-center">
-			<h2>ARKMS</h2>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
-			temporibus tenetur ratione repellendus.	</p>
-			<ul class="d-flex justify-center">
-				<li><a href="#">Home</a></li>
-				<li><a href="#">My Researches</a></li>
-				<li><a href="#">Statistics</a></li>
-				<li><a href="#">Collections</a></li>
-			</ul>
-		</div>
-	</div>
-</footer>
+    <footer class="py-5">
+      <div class="container">
+        <div class="footer-wrapper text-center">
+          <h2>ARKMS</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
+            temporibus tenetur ratione repellendus.
+          </p>
+          <ul class="d-flex justify-center">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">My Researches</a></li>
+            <li><a href="#">Statistics</a></li>
+            <li><a href="#">Collections</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
 
-<div class="copyright">
-	<div class="container center-between ">
-		<p class="no-padding">© 2019 ARKMS All right reserved</p>
-		<ul class="d-flex">
-			<li><i class="fab fa-facebook"></i></li>
-			<li><i class="fab fa-twitter"></i></li>
-			<li><i class="fab fa-youtube"></i></li>
-		</ul>
-	</div>
-</div>
-
+    <div class="copyright">
+      <div class="container center-between ">
+        <p class="no-padding">© 2019 ARKMS All right reserved</p>
+        <ul class="d-flex">
+          <li><i class="fab fa-facebook"></i></li>
+          <li><i class="fab fa-twitter"></i></li>
+          <li><i class="fab fa-youtube"></i></li>
+        </ul>
+      </div>
+    </div>
+    <!-- 
 <div class="no-margin hide" id="messagebox">
 	<div class="col-lg-12 col-md-12 col-sm-12">
 		<div class="message">
@@ -261,51 +403,86 @@
 			</div>
 		</div>
 	</div>	
-</div>
+</div> -->
 
-<a href="#top" id="smooth-scroll" class="bck-top"><span class="fa fa-3x fa-caret-up"></span></a>  
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>    
-<script src="js/script.js"></script> 	
-<script>
-    $(document).ready(function(){
-	  var btnSaveResearch = document.querySelectorAll("#btnSaveResearch");
-	  var btnDelete = document.querySelectorAll(".btnDelete");
-      var msgBox = document.getElementById("messagebox");
-      var top = document.getElementById("top");
-      var idBtnYes = document.getElementById("idBtnYes");
+    <div class="no-margin popup-addUser" id="messagebox">
+      <div class="col-lg-12 col-md-12 col-sm-12">
+        <div class="message">
+          <h2>Add User</h2>
+          <form action="">
+            <div class="form-group">
+              <label for="">Email</label>
+              <input type="email" placeholder="Enter Email" />
+            </div>
+            <div class="form-group">
+              <label for="">Name</label>
+              <input type="text" placeholder="Enter Name" />
+            </div>
+            <div class="form-group">
+              <label for="">Password</label>
+              <input type="password" placeholder="Enter Password" />
+            </div>
+            <button class="btn--green">Submit</button>
+            <p class="form-message">Something when wrong!</p>
+          </form>
+          <a href="#" class="popup-addUser-close">x</a>
+        </div>
+      </div>
+    </div>
 
-		btnSaveResearch.forEach(f => {
-			f.addEventListener("click", () => {
-				window.location.href = '#';
-			}); 
-		}); 
+    <a href="#top" id="smooth-scroll" class="bck-top"
+      ><span class="fa fa-3x fa-caret-up"></span
+    ></a>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+      $(document).ready(function() {
+        var btnSaveResearch = document.querySelectorAll("#btnSaveResearch");
+        var btnDelete = document.querySelectorAll(".btnDelete");
+        var msgBox = document.getElementById("messagebox");
+        var top = document.getElementById("top");
+        var idBtnYes = document.getElementById("idBtnYes");
 
-		btnDelete.forEach(f => {
-			f.addEventListener("click", () => {
-				event.preventDefault();
-				msgBox.classList.remove('hide');
-				msgBox.classList.add('show');
-				top.scrollIntoView({ block: 'start'});
-				top.classList.add('noscroll');
-			});
-		});
-        
-      idBtnYes.addEventListener("click",function(event){
-          event.preventDefault();
-          msgBox.classList.remove('show');
-          msgBox.classList.add('hide');
-          top.classList.remove('noscroll');
-      },false); 
+        // EDIT MON feb-13-2020
 
-      idBtnNo.addEventListener("click",function(event){
-          event.preventDefault();
-          msgBox.classList.remove('show');
-          msgBox.classList.add('hide');
-          top.classList.remove('noscroll');
-      },false); 
+        btnSaveResearch.forEach(f => {
+          f.addEventListener("click", () => {
+            window.location.href = "#";
+          });
+        });
 
-    
-  	}); 
-</script>	
-</body>
+        btnDelete.forEach(f => {
+          f.addEventListener("click", () => {
+            event.preventDefault();
+            msgBox.classList.remove("hide");
+            msgBox.classList.add("show");
+            top.scrollIntoView({ block: "start" });
+            top.classList.add("noscroll");
+          });
+        });
+
+        idBtnYes.addEventListener(
+          "click",
+          function(event) {
+            event.preventDefault();
+            msgBox.classList.remove("show");
+            msgBox.classList.add("hide");
+            top.classList.remove("noscroll");
+          },
+          false
+        );
+
+        idBtnNo.addEventListener(
+          "click",
+          function(event) {
+            event.preventDefault();
+            msgBox.classList.remove("show");
+            msgBox.classList.add("hide");
+            top.classList.remove("noscroll");
+          },
+          false
+        );
+      });
+    </script>
+  </body>
 </html>
