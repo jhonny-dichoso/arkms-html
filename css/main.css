@@ -1527,21 +1527,6 @@ input {
   padding: 1.5rem;
 }
 
-/* MON EDIT STAT PAGE feb-12-2020 */
-.browse-card-content .cat-list {
-  max-width: 25rem;
-  margin: 0 auto;
-}
-.browse-card-content .cat-list .cat-list-item {
-  text-align: left;
-  font-weight: bold;
-  margin-bottom: 1rem;
-  display: flex;
-  justify-content: space-between;
-}
-
-/* MON EDIT STAT PAGE feb-12-2020 END*/
-
 .most-download-card .flex-content,
 .browse-card .flex-content {
   display: flex;
