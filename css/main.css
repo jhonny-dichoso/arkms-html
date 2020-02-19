@@ -726,7 +726,9 @@ form textarea {
   font-size: 1.5rem;
 }
 
-#messagebox {
+/* MON Feb-13-2020 */
+#messagebox,
+#messageboxAddAdmin {
   background: rgba(0, 0, 0, 0.4);
   position: fixed;
   left: 0;
@@ -739,7 +741,7 @@ form textarea {
 .message {
   position: absolute;
   text-align: center;
-  width: 275px;
+  max-width: 275px;
   border: 1px solid #ddd;
   border-radius: 5px;
   background: #fff;
@@ -750,6 +752,44 @@ form textarea {
   left: 0;
   right: 0;
 }
+
+.msg-add-user {
+  max-width: 575px;
+}
+
+.message h2 {
+  margin-top: 2rem;
+}
+
+.message .form-group {
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+.message .form-group label {
+  font-size: 1.6rem;
+  margin-bottom: 0.6rem;
+}
+.message form button {
+  margin-bottom: 1.6rem;
+}
+
+.message .popup-addUser-close {
+  position: absolute;
+  top: 1rem;
+  right: 2.5rem;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+  background: transparent;
+}
+
+.message .popup-addUser-close:hover {
+  color: #5fa55f;
+}
+/* MON Feb-13-2020 END*/
 
 .message .fas {
   color: #5fa55f;
