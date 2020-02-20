@@ -714,6 +714,7 @@ form input[type="password"] {
 
 form textarea {
   height: 250px;
+  line-height: 1.5;
 }
 
 .label-error {
