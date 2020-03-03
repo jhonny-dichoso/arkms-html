@@ -2160,7 +2160,7 @@ footer li a {
 }
 
 .log p {
-  margin-bottom: 4rem;
+  margin-bottom: 1rem;
 }
 
 .log ul {
@@ -2376,4 +2376,14 @@ footer li a {
 .selectAccount-box li i.fa-plus {
   color: red;
   transform: rotate(45deg);
+}
+
+/* MAR-3-2020 back to login button */
+
+.btn-backToLogin {
+  padding: 1rem 1.8rem;
+  /* background-color: #e2e2e2; */
+  color: #7b7b7b;
+  border-radius: 40px;
+  /* display: inline-block; */
 }
