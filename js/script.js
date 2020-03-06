@@ -162,4 +162,6 @@ $(document).ready(function() {
   //     msgBox.classList.add('hide');
   //     top.classList.remove('noscroll');
   // });
+
+  //THIS IS FOR THE STATISTIC GRAPHS
 });
