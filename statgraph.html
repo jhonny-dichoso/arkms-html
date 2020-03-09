@@ -88,13 +88,12 @@
         </div>
       </section>
 
-      <section class="linegraphs">
+      <section class="linegraphs py-5">
         <div class="container">
           <div class="row">
             <div class="col-md-6">
               <div class="linegraph-box graph-researches">
                   <h3>All Researches (<span>40<span>)</h3>
-                    <canvas id="line-researches" width="400" height="300"></canvas>  
                     <canvas id="line-researches" width="400" height="300"></canvas>  
               </div>
 
@@ -102,8 +101,100 @@
 
             <div class="col-md-6">
               <div class="linegraph-box graph-researchers">
-                  <h3>Authors / Researchers (<span>34<span>)</h3>
-                    <canvas id="line-author-researchers" width="400" height="300"></canvas>  
+                  <h3>Authors or Researchers (<span>34<span>)</h3>
+                    <canvas id="line-author" width="400" height="300"></canvas>  
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="linegraph-box graph-agency">
+                  <h3>Organizations or Agencies (<span>38<span>)</h3>
+                    <canvas id="line-agency" width="400" height="300"></canvas>  
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="linegraph-box graph-location">
+                  <h3>Location (<span>19<span>)</h3>
+                    <canvas id="line-location" width="400" height="300"></canvas>  
+              </div>
+            </div>
+
+            
+          </div>
+        </div>
+      </section>
+
+      <section class="bargraph py-5">
+        <div class="container">
+          <h2 class="mb-4">Researches per Category</h2>
+            <canvas id="bar-category" width="400" height="200"></canvas>  
+        </div>
+      </section>
+
+      <section class="doughnut py-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="doughnut-box">
+                <h3 class="text-center">Top Researches Per Subject</h3>
+                <canvas id="doughnut-research" width="380" height="400"></canvas>  
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="doughnut-wrapper">
+                <h3 class="text-center">Top Authors / Rearchers</h3>
+                <canvas id="doughnut-author" width="395" height="400"></canvas>  
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="forum py-5">
+
+        <div class="container">
+          <h2>TOP 5 Forum Topic</h2>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="linegraph-box"> 
+                <h3>1. Masarap ba ang cacao</h3>
+                <canvas id="line-top-one" width="400" height="300"></canvas>  
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="linegraph-box"> 
+                <h3>2. Masarap ba ang saging? :D</h3>
+                <canvas id="line-top-two" width="400" height="300"></canvas>  
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="linegraph-box"> 
+                <h3>3. Guest Topic</h3>
+                <canvas id="line-top-three" width="400" height="300"></canvas>  
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="linegraph-box"> 
+                <h3>4. Sample Gift</h3>
+                <canvas id="line-top-four" width="400" height="300"></canvas>  
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="linegraph-box"> 
+                <h3>5. Loverboy</h3>
+                <canvas id="line-top-five" width="400" height="300"></canvas>  
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="linegraph-box"> 
+                <h3>Top Five Forum</h3>
+                <canvas id="line-top-all" width="400" height="300"></canvas>  
               </div>
             </div>
           </div>
@@ -127,7 +218,7 @@
           </ul>
         </div>
       </div>
-    </footer>
+    </footer>  
 
     <div class="copyright">
       <div class="container center-between ">
@@ -146,10 +237,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
     <script src="js/script.js"></script>
-
-
-    <script src="js/graph.js">
-      
-    </script>
+    <script src="js/graph.js"></script>
   </body>
 </html>

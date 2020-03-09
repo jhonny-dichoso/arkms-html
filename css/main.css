@@ -2387,3 +2387,17 @@ footer li a {
   border-radius: 40px;
   /* display: inline-block; */
 }
+
+/* ==========================================================
+  STATISTIC GRAPH STYLE
+*/
+.linegraph-box,
+.doughnut-box {
+  margin-bottom: 5rem;
+  padding: 2rem;
+}
+
+.bargraph,
+.forum {
+  background-color: #f3f3f3;
+}
