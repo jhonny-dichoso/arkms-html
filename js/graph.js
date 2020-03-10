@@ -186,6 +186,25 @@ var doughnutResearches = new Chart(ctxdoughnutresearch, {
     ],
 
     labels: ["Cacao", "Farming", "Organic", "Mango", "Coffee", "Other"]
+  },
+  options: {
+    tooltips: {
+      callbacks: {
+        label: function(tooltipItem, data) {
+          var dataset = data.datasets[tooltipItem.datasetIndex];
+          var meta = dataset._meta[Object.keys(dataset._meta)[0]];
+          var total = meta.total;
+          var currentValue = dataset.data[tooltipItem.index];
+          var percentage = parseFloat(
+            ((currentValue / total) * 100).toFixed(1)
+          );
+          return currentValue + " (" + percentage + "%)";
+        },
+        title: function(tooltipItem, data) {
+          return data.labels[tooltipItem[0].index];
+        }
+      }
+    }
   }
 });
 var doughnutResearches = new Chart(ctxdoughnutauthor, {
@@ -205,7 +224,33 @@ var doughnutResearches = new Chart(ctxdoughnutauthor, {
       }
     ],
 
-    labels: ["Cacao", "Farming", "Organic", "Mango", "Coffee", "Other"]
+    labels: [
+      "Estela Taño",
+      "Daisynette Manalo",
+      "Concepcion Amat",
+      "Elizabeth Gregorio",
+      "Virgilia Arellano",
+      "Other"
+    ]
+  },
+  options: {
+    tooltips: {
+      callbacks: {
+        label: function(tooltipItem, data) {
+          var dataset = data.datasets[tooltipItem.datasetIndex];
+          var meta = dataset._meta[Object.keys(dataset._meta)[0]];
+          var total = meta.total;
+          var currentValue = dataset.data[tooltipItem.index];
+          var percentage = parseFloat(
+            ((currentValue / total) * 100).toFixed(1)
+          );
+          return currentValue + " (" + percentage + "%)";
+        },
+        title: function(tooltipItem, data) {
+          return data.labels[tooltipItem[0].index];
+        }
+      }
+    }
   }
 });
 
@@ -216,6 +261,7 @@ var ctxTopThree = document.getElementById("line-top-three");
 var ctxTopFour = document.getElementById("line-top-four");
 var ctxTopFive = document.getElementById("line-top-five");
 var ctxTopAll = document.getElementById("line-top-all");
+var ctxTopAllDoughnut = document.getElementById("doughnut-top-all");
 
 var forumGraphOne = new Chart(ctxTopOne, {
   type: "line",
@@ -394,6 +440,52 @@ var forumGraphAll = new Chart(ctxTopAll, {
       labels: {
         fontSize: 16,
         fontStyle: "bold"
+      }
+    }
+  }
+});
+
+var doughnutResearches = new Chart(ctxTopAllDoughnut, {
+  type: "doughnut",
+  data: {
+    datasets: [
+      {
+        data: [40, 56, 23, 76, 23, 67],
+        backgroundColor: [
+          "#FFC592",
+          "#FFF5B2",
+          "#BEDBA9",
+          "#BBE0F7",
+          "#C4CBE7",
+          "#ECC6DE"
+        ]
+      }
+    ],
+
+    labels: [
+      "1. Masarap ba ang Cacao",
+      "2. Masarap ba ang Saging",
+      "3. Guest Topic",
+      "4. Sample Gift",
+      "5. Loverboy"
+    ]
+  },
+  options: {
+    tooltips: {
+      callbacks: {
+        label: function(tooltipItem, data) {
+          var dataset = data.datasets[tooltipItem.datasetIndex];
+          var meta = dataset._meta[Object.keys(dataset._meta)[0]];
+          var total = meta.total;
+          var currentValue = dataset.data[tooltipItem.index];
+          var percentage = parseFloat(
+            ((currentValue / total) * 100).toFixed(1)
+          );
+          return currentValue + " (" + percentage + "%)";
+        },
+        title: function(tooltipItem, data) {
+          return data.labels[tooltipItem[0].index];
+        }
       }
     }
   }
