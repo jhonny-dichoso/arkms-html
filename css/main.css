@@ -424,7 +424,7 @@ body {
 }
 
 .text-center {
-  text-align: center;
+  text-align: center !important;
 }
 
 .text-left {
@@ -2400,4 +2400,10 @@ footer li a {
 .bargraph,
 .forum {
   background-color: #f3f3f3;
+}
+
+.browse-card .graph-link {
+  display: block;
+  margin-top: 2rem;
+  text-align: left;
 }
