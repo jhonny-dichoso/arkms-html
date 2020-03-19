@@ -2407,3 +2407,20 @@ footer li a {
   margin-top: 2rem;
   text-align: left;
 }
+
+/* MON EDIT Mar-19-2020 */
+
+#filter-year {
+  float: right;
+  display: flex;
+}
+
+#filter-year label {
+  font-size: 1.6rem;
+  width: 20rem;
+  padding-top: 1.3rem;
+}
+
+.t-center {
+  text-align: center !important;
+}
